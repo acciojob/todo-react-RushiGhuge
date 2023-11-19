@@ -1,1 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button,input{
+    padding: 5px;
+}
 
+.todoItem{
+    display: flex ;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.todoList{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}

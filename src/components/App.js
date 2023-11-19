@@ -23,9 +23,9 @@ const App = () => {
         }}>Add Todo</button>
       </div>
 
-      <div className="todoList">
+      <ul className="todoList">
         {taskList.map((task, index) => {
-          return <div key={index} className="todoItem">
+          return <li key={index} className="todoItem">
             <p> {task} </p> <button onClick={() => {
               {
                 setTaskList(taskList.filter((item, i) => {
@@ -33,9 +33,9 @@ const App = () => {
                 }))
               }
             }}>Delete</button>
-          </div>
+          </li>
         })}
-      </div>
+      </ul>
     </div >
   )
 }
